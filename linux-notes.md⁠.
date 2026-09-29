@@ -1,0 +1,65 @@
+# Linux — Lesson 1: Foundations
+
+## What is Linux?
+Linux is an operating system. It manages computer resources and provides a platform for applications.
+
+## Terminal
+A terminal is an interface that lets us communicate with the operating system using text commands.
+
+## Shell
+A shell is a program that reads and interprets commands typed into the terminal and asks the operating system to perform the appropriate action.
+
+## Files
+A file is a container for information or data.
+
+Examples:
+- `python.py` — Python code
+- `notes.txt` — text
+- `photo.jpg` — image data
+
+## Directories
+A directory is another word for a folder. It can contain files and other directories.
+
+A directory and a file are different things.
+
+## Paths
+A path tells Linux where something is located.
+
+Example:
+
+`School/Projects/python.py`
+
+- `School/` = directory
+- `Projects/` = directory inside School
+- `python.py` = file inside Projects
+
+## Current directory
+The current directory is the directory we are currently inside while using the terminal.
+
+## Basic Linux commands
+
+`pwd` — shows the current directory/path.
+
+`ls` — shows what is inside the current directory.
+
+`cd` — changes the current directory.
+
+### Terminal practice
+
+`pwd` returned:
+
+`/home/user`
+
+`ls` showed:
+
+`documents/ projects/`
+
+Then:
+
+`cd projects`
+
+changed the current directory to:
+
+`/home/user/projects`
+
+Running `ls` inside `projects` showed that it was currently empty.
