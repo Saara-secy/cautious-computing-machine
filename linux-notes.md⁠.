@@ -1,65 +1,69 @@
 # Linux — Lesson 1: Foundations
 
 ## What is Linux?
-Linux is an operating system. It manages computer resources and provides a platform for applications.
+Linux is an operating system used to manage computer resources and run programs. It is widely used on servers.
 
-## Terminal
-A terminal is an interface that lets us communicate with the operating system using text commands.
+## Terminal & Shell
+- Terminal = text-based interface used to communicate with the operating system.
+- Shell = interprets commands and asks the operating system to perform them.
 
-## Shell
-A shell is a program that reads and interprets commands typed into the terminal and asks the operating system to perform the appropriate action.
+Flow:
+You → Terminal → Shell → Operating System → Hardware
 
-## Files
-A file is a container for information or data.
-
-Examples:
-- `python.py` — Python code
-- `notes.txt` — text
-- `photo.jpg` — image data
-
-## Directories
-A directory is another word for a folder. It can contain files and other directories.
-
-A directory and a file are different things.
+## Files & Directories
+- File = container for information/data.
+- Directory = folder-like container that can contain files and other directories.
 
 ## Paths
 A path tells Linux where something is located.
 
 Example:
+`/home/user/projects/python/main.py`
 
-`School/Projects/python.py`
+## Current Directory
+The current directory is the location I am currently working inside.
 
-- `School/` = directory
-- `Projects/` = directory inside School
-- `python.py` = file inside Projects
+## Basic Commands
 
-## Current directory
-The current directory is the directory we are currently inside while using the terminal.
+| Command | Meaning |
+|---|---|
+| `pwd` | Show current location |
+| `ls` | List contents |
+| `cd` | Change directory |
+| `cd ..` | Move to parent directory |
+| `mkdir` | Create a directory |
+| `touch` | Create a file |
 
-## Basic Linux commands
+## Absolute vs Relative Paths
 
-`pwd` — shows the current directory/path.
+Absolute path:
+`/home/user/projects/python/main.py`
 
-`ls` — shows what is inside the current directory.
+Relative path from `/home/user`:
+`projects/python/main.py`
 
-`cd` — changes the current directory.
+## Special Path Symbols
 
-### Terminal practice
+- `.` = current directory
+- `..` = parent directory
+- `/` = separates path components
 
-`pwd` returned:
+## Practice
 
-`/home/user`
+Created:
+`/home/user/practise/`
 
-`ls` showed:
+Created a file inside it:
+`/home/user/practise/notes.txt`
 
-`documents/ projects/`
+Practiced:
+`pwd`
+`ls`
+`cd`
+`cd ..`
+`mkdir`
+`touch`
 
-Then:
+## Big Idea
 
-`cd projects`
-
-changed the current directory to:
-
-`/home/user/projects`
-
-Running `ls` inside `projects` showed that it was currently empty.
+Linux navigation is about knowing where I am, understanding paths, and using commands to move around and manage files and directories.
