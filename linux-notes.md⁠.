@@ -67,3 +67,161 @@ Practiced:
 ## Big Idea
 
 Linux navigation is about knowing where I am, understanding paths, and using commands to move around and manage files and directories.
+## 🐧 Linux — Lesson 2: Filesystem & Directory Structure
+
+### 1. Root Directory `/`
+`/` is the root directory — the top of the entire Linux filesystem.
+
+All other directories branch out from `/`.
+
+### 2. `/home`
+`/home` contains the home directories of regular users.
+
+Example:
+`/home/user`
+
+`/home/user` is the personal home directory of the regular user `user`.
+
+### 3. `/etc`
+`/etc` contains system-wide configuration files and settings.
+
+Think:
+`/etc` = configuration
+
+### 4. `/tmp`
+`/tmp` is used for temporary files and data that programs or users may need for a short time.
+
+Think:
+`/tmp` = temporary
+
+### 5. `/usr`
+`/usr` contains many programs, libraries, and other software-related files and resources.
+
+Think:
+`/usr` = software/program-related files
+
+### 6. `/var`
+`/var` contains certain types of data that change over time.
+
+Examples:
+- Logs
+- Caches
+- Service/application data
+
+Think:
+`/var` = variable/changing data
+
+### 7. `/root`
+`/root` is the home directory of the special administrator user called `root`.
+
+Important:
+- `/` = root directory
+- `/root` = root user's home directory
+
+They are NOT the same thing.
+
+### 8. Linux Directory Tree
+
+```text
+/
+├── etc/
+├── home/
+│   └── user/
+│       ├── documents/
+│       └── projects/
+├── tmp/
+├── usr/
+└── var/
+Note: Actual Linux systems can have different directories. This is a simplified example.
+
+9. Navigating Directories
+
+pwd → shows where I am
+
+ls → lists what’s inside my current directory
+
+cd name → enters a directory inside my current directory
+
+cd .. → moves one level up
+
+cd / → goes directly to the root directory
+
+10. Absolute vs Relative Paths
+
+Absolute path:
+Starts at / and gives the complete location.
+
+Example:
+/home/user/projects
+
+Relative path:
+Starts from my current location.
+
+If I am at /home:
+
+user/projects
+
+takes me to:
+
+/home/user/projects
+
+11. ..
+
+.. means the parent directory — one level up.
+
+Example:
+/home/user/projects
+        ↓ cd ..
+/home/user
+Two .. :
+/home/user
+    ↓ ..
+/home
+    ↓ ..
+/
+Therefore:
+
+cd ../.. → moves two levels up.
+
+⭐ Most Important Rule
+
+Relative paths depend on where I currently am.
+
+Absolute paths start from / and do not depend on my current location.
+
+pwd tells me where I am.
+ls tells me what’s there.
+
+💡 Big Idea
+
+Linux’s filesystem is a hierarchy starting at /.
+
+Understanding directories, paths, and my current location lets me navigate the system confidently.
+
+🧪 Practice
+
+Practiced:
+
+* pwd
+* ls
+* cd
+* cd ..
+* Absolute paths
+* Relative paths
+* Navigating /, /home, /home/user, and /home/user/projects
+
+🎯 Lesson 2 Key Terms
+
+* Root directory
+* Home directory
+* Filesystem
+* Absolute path
+* Relative path
+* Parent directory
+* Configuration
+* Temporary data
+* Variable/changing data
+* pwd
+* ls
+* cd
+* ..
