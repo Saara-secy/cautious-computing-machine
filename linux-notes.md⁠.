@@ -225,3 +225,84 @@ Practiced:
 * ls
 * cd
 * ..
+Linux Lesson 3 — File Management
+
+1. cp — Copy
+
+cp copies a file while keeping the original.
+
+cp SOURCE DESTINATION
+
+Examples:
+
+cp notes.txt backup.txt
+cp notes.txt projects/
+cp notes.txt projects/backup.txt
+
+* The original stays.
+* The copy can have the same or a new name.
+
+2. mv — Move
+
+mv moves a file or directory to another location.
+
+mv backup.txt projects/
+
+The original is no longer in its old location.
+
+3. mv — Rename
+
+mv can also rename something when the source and destination are in the same directory.
+
+mv notes.txt study-notes.txt
+
+The file stays in the same directory but gets a new name.
+
+mv can also move and rename at the same time:
+
+mv file.txt documents/notes.txt
+
+4. rm — Remove
+
+rm removes a file.
+
+rm delete-me.txt
+
+Linux normally does not move files removed with rm to a Recycle Bin.
+
+5. cat — Display File Contents
+
+cat displays the contents of a file without changing it.
+
+cat message.txt
+
+Example:
+
+echo "Hello Linux" > message.txt
+cat message.txt
+
+Output:
+
+Hello Linux
+
+6. cp -r — Copy a Directory
+
+cp -r copies a directory and everything inside it.
+
+cp -r projects/ projects-copy/
+
+* The original directory stays.
+* A new copy is created.
+* -r means recursive: Linux copies through the directory and its contents.
+
+Important Mental Models
+
+* cp → copy a file
+* cp -r → copy a directory and its contents
+* mv → move or rename
+* rm → remove a file
+* cat → display file contents
+
+Lesson 3 Big Idea
+
+Linux file management is about controlling files and directories: copying them, moving or renaming them, removing them, viewing their contents, and copying entire directories when needed.
