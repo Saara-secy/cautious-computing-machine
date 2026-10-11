@@ -306,3 +306,67 @@ Important Mental Models
 Lesson 3 Big Idea
 
 Linux file management is about controlling files and directories: copying them, moving or renaming them, removing them, viewing their contents, and copying entire directories when needed.
+Linux Lesson 4 — Permissions & Access
+
+1. What are permissions?
+
+Linux permissions control who can read, modify, or execute a file, and who can access a directory.
+
+2. Reading permissions
+
+Example:
+
+-rw-r--r--
+
+* First character: - means regular file; d means directory.
+* First group of three: owner permissions.
+* Second group of three: group permissions.
+* Third group of three: others’ permissions.
+
+Permission symbols:
+
+* r = read
+* w = write
+* x = execute
+* - = permission not granted
+
+In -rw-r--r--:
+
+* Owner: read and write.
+* Group: read only.
+* Others: read only.
+
+3. Understanding ls -l
+
+ls -l displays detailed file information, including permissions, owner, group, size, date and filename.
+
+The first name after the permissions and link count is the owner. The next name is the group.
+
+4. Changing permissions with chmod
+
+chmod changes file or directory permissions.
+
+* chmod u+w permission-test.txt — add write permission for the owner.
+* chmod u-w permission-test.txt — remove write permission from the owner.
+* chmod g+w permission-test.txt — add write permission for the group.
+* chmod g-w permission-test.txt — remove write permission from the group.
+
+Command symbols:
+
+* u = owner/user
+* g = group
+* o = others
+* + = add a permission
+* - = remove a permission
+
+5. Important directory difference
+
+For files, read means viewing contents, write means modifying contents, and execute means running a program or script.
+
+For directories, read allows listing names, write allows changing directory entries, and execute allows accessing or traversing the directory.
+
+Practical learning
+
+I used touch to create a test file, ls -l to inspect its permissions, and chmod to change permissions. I checked the result after each change and restored the original permissions.
+
+Big idea: Linux permissions help control access to files and directories.
